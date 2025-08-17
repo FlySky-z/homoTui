@@ -59,7 +59,7 @@ jobs:
         go build -ldflags "-X main.appName=${{ env.APP_NAME }} -X main.appVersion=${{ steps.version.outputs.APP_VERSION }}" -o "dist/${BINARY_NAME}" .
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ env.APP_NAME }}-${{ steps.version.outputs.APP_VERSION }}-${{ matrix.goos }}-${{ matrix.goarch }}
         path: dist/${{ env.APP_NAME }}-${{ steps.version.outputs.APP_VERSION }}-${{ matrix.goos }}-${{ matrix.goarch }}${{ matrix.suffix }}
@@ -79,7 +79,7 @@ jobs:
         echo "APP_VERSION=${VERSION}" >> $GITHUB_OUTPUT
     
     - name: Download all artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         path: ./artifacts
 
