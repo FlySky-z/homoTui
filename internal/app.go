@@ -37,14 +37,20 @@ type App struct {
 
 	// Focus management
 	focusOnSidebar bool
+
+	// App info
+	appName    string
+	appVersion string
 }
 
 // NewApp creates a new application instance
-func NewApp() *App {
+func NewApp(appName, appVersion string) *App {
 	return &App{
 		app:            tview.NewApplication(),
 		pageNames:      []string{"dashboard", "proxies", "connections", "config", "logs"},
 		focusOnSidebar: true, // Start with sidebar focused
+		appName:        appName,
+		appVersion:     appVersion,
 	}
 }
 
@@ -79,7 +85,7 @@ func (a *App) Initialize() error {
 // setupUI initializes the user interface
 func (a *App) setupUI() {
 	// Create components
-	a.header = components.NewHeader("HomoTui", "v0.1-Alpha")
+	a.header = components.NewHeader(a.appName, a.appVersion)
 	a.sidebar = components.NewSidebar()
 	a.statusBar = components.NewStatusBar()
 
@@ -121,11 +127,9 @@ func (a *App) setupPages() {
 
 	// Proxies page
 	proxiesPage := pages.NewProxies()
-	// proxiesPage.SetApp(a.app)
-	// proxiesPage.SetInputCapture(proxiesPage.GetInputCapture())
 	a.pages.AddPage("proxies", proxiesPage, true, false)
 
-	// Connections page (replaces rules)
+	// Connections page
 	connectionsPage := pages.NewConnections()
 	a.pages.AddPage("connections", connectionsPage, true, false)
 
