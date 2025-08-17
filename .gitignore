@@ -1,0 +1,15 @@
+# Ignores common files
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+*.swp
+bin/
+
+# Vibe coding
+TODO.md
+ROADMAP.md
+PROGRESS.md
+PROJECT_PLAN.md
+.github/prompts
