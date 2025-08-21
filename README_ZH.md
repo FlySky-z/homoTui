@@ -1,6 +1,9 @@
-# homoTui - 终端代理管理界面
+# homoTui - Mihomo的终端UI
 
-一个基于 Go 和 tview 构建的终端用户界面，带来类似桌面应用的现代代理管理体验。
+使用tview构建的基于go的终端用户界面提供了类似于桌面mihomo程序的现代代理管理体验。
+
+[![License](https://img.shields.io/github/license/FlySky-z/homoTui)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/homoTui?style=social)](https://github.com/FlySky-z/homoTui/stargazers)
 
 [English](README.md) | 简体中文
 

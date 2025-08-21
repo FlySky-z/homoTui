@@ -1,6 +1,9 @@
-# homoTui - Terminal UI for Proxy Management
+# homoTui - Terminal UI for Mihomo
 
-A Go-based terminal user interface built with tview, providing a modern proxy management experience similar to desktop applications.
+The Go-based terminal user interface built with tview provides a modern agent management experience similar to the desktop mihomo program.
+
+[![License](https://img.shields.io/github/license/FlySky-z/homoTui)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/homoTui?style=social)](https://github.com/FlySky-z/homoTui/stargazers)
 
 English | [简体中文](README_ZH.md)
 
