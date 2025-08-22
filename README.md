@@ -1,6 +1,6 @@
-# homoTui - Terminal UI for Mihomo
+# homoTui - TUI for Mihomo （Provide a desktop client experience in the terminal）
 
-The Go-based terminal user interface built with tview provides a modern agent management experience similar to the desktop mihomo program.
+The Go-based terminal UI built with tview provides a modern agent management experience similar to the desktop mihomo program.
 
 [![License](https://img.shields.io/github/license/FlySky-z/homoTui)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/FlySky-z/homoTui?style=social)](https://github.com/FlySky-z/homoTui/stargazers)
