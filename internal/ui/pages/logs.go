@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"homoTui/internal/api"
-	"homoTui/internal/models"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/models"
 
 	"github.com/rivo/tview"
 )

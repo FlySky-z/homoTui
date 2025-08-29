@@ -2,9 +2,9 @@ package components
 
 import (
 	"fmt"
-	"homoTui/internal/api"
-	"homoTui/internal/models"
 	"log"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/models"
 	"strings"
 
 	"github.com/rivo/tview"

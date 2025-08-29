@@ -11,7 +11,7 @@ permissions:
   packages: write
 
 env:
-  APP_NAME: "HomoTui"
+  APP_NAME: "mihomoTui"
 
 jobs:
   build:
@@ -113,17 +113,17 @@ jobs:
         tag_name: ${{ steps.version.outputs.APP_VERSION }}
         name: Release ${{ steps.version.outputs.APP_VERSION }}
         body: |
-          ## HomoTui ${{ steps.version.outputs.APP_VERSION }}
+          ## mihomoTui ${{ steps.version.outputs.APP_VERSION }}
 
           ### 🎉 Updates
           ${{ steps.changelog.outputs.changelog }}
 
           ### 📦 Download Links
-          - Linux AMD64: [HomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-amd64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/HomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-amd64)
-          - Linux ARM64: [HomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-arm64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/HomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-arm64)
-          - macOS AMD64: [HomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-amd64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/HomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-amd64)
-          - macOS ARM64: [HomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-arm64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/HomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-arm64)
-          - Windows AMD64: [HomoTui-${{ steps.version.outputs.APP_VERSION }}-windows-amd64.exe](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/HomoTui-${{ steps.version.outputs.APP_VERSION }}-windows-amd64.exe)
+          - Linux AMD64: [mihomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-amd64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/mihomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-amd64)
+          - Linux ARM64: [mihomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-arm64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/mihomoTui-${{ steps.version.outputs.APP_VERSION }}-linux-arm64)
+          - macOS AMD64: [mihomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-amd64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/mihomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-amd64)
+          - macOS ARM64: [mihomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-arm64](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/mihomoTui-${{ steps.version.outputs.APP_VERSION }}-darwin-arm64)
+          - Windows AMD64: [mihomoTui-${{ steps.version.outputs.APP_VERSION }}-windows-amd64.exe](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.APP_VERSION }}/mihomoTui-${{ steps.version.outputs.APP_VERSION }}-windows-amd64.exe)
         files: artifacts/**/*
         draft: false
         prerelease: ${{ contains(steps.version.outputs.APP_VERSION, 'alpha') || contains(steps.version.outputs.APP_VERSION, 'beta') || contains(steps.version.outputs.APP_VERSION, 'rc') }}

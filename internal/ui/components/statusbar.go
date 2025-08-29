@@ -3,10 +3,10 @@ package components
 import (
 	"context"
 	"fmt"
-	"homoTui/internal/api"
-	"homoTui/internal/models"
-	"homoTui/internal/ui"
-	"homoTui/internal/utils"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/models"
+	"mihomoTui/internal/ui"
+	"mihomoTui/internal/utils"
 	"time"
 
 	"github.com/rivo/tview"

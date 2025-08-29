@@ -3,10 +3,10 @@ package pages
 import (
 	"context"
 	"fmt"
-	"homoTui/internal/api"
-	"homoTui/internal/models"
-	"homoTui/internal/ui"
 	"log"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/models"
+	"mihomoTui/internal/ui"
 	"sort"
 	"strings"
 	"sync"

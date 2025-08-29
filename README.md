@@ -1,9 +1,9 @@
-# homoTui - TUI for Mihomo （Provide a desktop client experience in the terminal）
+# mihomoTui - TUI for Mihomo （Provide a desktop client experience in the terminal）
 
 The Go-based terminal UI built with tview provides a modern agent management experience similar to the desktop mihomo program.
 
-[![License](https://img.shields.io/github/license/FlySky-z/homoTui)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/homoTui?style=social)](https://github.com/FlySky-z/homoTui/stargazers)
+[![License](https://img.shields.io/github/license/FlySky-z/mihomoTui)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/mihomoTui?style=social)](https://github.com/FlySky-z/mihomoTui/stargazers)
 
 English | [简体中文](README_ZH.md)
 
@@ -31,6 +31,10 @@ Current Version: **In Development** (Alpha)
 - [x] API client development
 - [x] UI framework setup
 - [x] Core functionality implementation
+- [x] Proxy management
+- [x] Traffic monitoring
+- [x] Log viewing
+- [ ] Multi-language support
 - [ ] Check your config detail
 - [ ] Check rule
 - [ ] Switch config files
@@ -40,12 +44,12 @@ Current Version: **In Development** (Alpha)
 
 - **Language**: Go 1.24.1
 - **UI Framework**: [tview](https://github.com/rivo/tview)
-- **API**: HOMO API
+- **API**: Mihomo API
 
 ## 📁 Project Structure
 
 ```
-homoTui/
+mihomoTui/
 ├── main.go                 # Program entry point
 ├── internal/
 │   ├── api/               # API client
@@ -84,9 +88,9 @@ go run main.go
 2. Use the mouse or keyboard shortcuts to navigate
 3. Switch tab to `配置`
 4. Configure your settings
-  - Your config data will save to `~/.config/homoTui/config.yaml`
+  - Your config data will save to `~/.config/mihomoTui/config.yaml`
 5. After configuring, save and restart the application to avoid issues.
-6. Enjoy using HomoTui!
+6. Enjoy using mihomoTui!
 
 ## 🤝 Contributing
 
@@ -112,5 +116,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, please contact us through:
 
-- Submit an [Issue](https://github.com/FlySky-z/homoTui/issues)
-- Start a [Discussion](https://github.com/FlySky-z/homoTui/discussions)
+- Submit an [Issue](https://github.com/FlySky-z/mihomoTui/issues)
+- Start a [Discussion](https://github.com/FlySky-z/mihomoTui/discussions)

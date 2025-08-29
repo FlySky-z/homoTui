@@ -1,4 +1,4 @@
-module homoTui
+module mihomoTui
 
 go 1.24.1
 

@@ -10,12 +10,12 @@ import (
 	"os"
 	"time"
 
-	"homoTui/internal/models"
+	"mihomoTui/internal/models"
 )
 
 func init() {
 	// output to file
-	logFile, err := os.OpenFile("homo.log", os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0666)
+	logFile, err := os.OpenFile("mihomo.log", os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0666)
 	go func() {
 		for {
 			time.Sleep(2 * time.Second)

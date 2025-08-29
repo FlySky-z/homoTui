@@ -1,7 +1,7 @@
 package pages
 
 import (
-	"homoTui/internal/config"
+	"mihomoTui/internal/config"
 
 	"github.com/rivo/tview"
 )

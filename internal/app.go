@@ -1,11 +1,11 @@
 package app
 
 import (
-	"homoTui/internal/api"
-	"homoTui/internal/config"
-	"homoTui/internal/ui"
-	"homoTui/internal/ui/components"
-	"homoTui/internal/ui/pages"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/config"
+	"mihomoTui/internal/ui"
+	"mihomoTui/internal/ui/components"
+	"mihomoTui/internal/ui/pages"
 
 	"github.com/rivo/tview"
 )

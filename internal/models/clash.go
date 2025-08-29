@@ -2,7 +2,7 @@ package models
 
 import "time"
 
-// Config represents the Homo configuration
+// Config represents the mihomo configuration
 type Config struct {
 	Port               int                    `json:"port"`
 	SocksPort          int                    `json:"socks-port"`

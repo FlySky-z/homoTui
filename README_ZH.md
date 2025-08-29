@@ -1,26 +1,26 @@
-# homoTui - Mihomo的终端UI
+# mihomoTui - Mihomo 的终端界面
 
-使用tview构建的基于go的终端用户界面提供了类似于桌面mihomo程序的现代代理管理体验。
+基于 Go 和 tview 构建的终端用户界面，带来类似桌面 mihomo 程序的现代代理管理体验。
 
-[![License](https://img.shields.io/github/license/FlySky-z/homoTui)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/homoTui?style=social)](https://github.com/FlySky-z/homoTui/stargazers)
+[![License](https://img.shields.io/github/license/FlySky-z/mihomoTui)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlySky-z/mihomoTui?style=social)](https://github.com/FlySky-z/mihomoTui/stargazers)
 
 [English](README.md) | 简体中文
 
-![demo image](static/image.png)
+![演示图片](static/image.png)
 
 ## 🚀 功能特色
 
-- 🖥️ **现代终端界面** - 使用 `tview` 构建美观界面
+- 🖥️ **现代终端 UI** - 使用 `tview` 打造美观界面
 - 🌐 **代理管理** - 查看和切换代理节点
-- ⚙️ **配置控制** - 支持 TUN 模式和代理模式切换
+- ⚙️ **配置控制** - TUN 模式与代理模式切换
 - 📊 **实时监控** - 流量统计与连接状态
 - 📋 **规则管理** - [TODO] 查看和管理代理规则
-- 📝 **日志查看** - 实时日志显示与筛选
+- 📝 **日志查看** - 实时日志展示与筛选
 - 🎨 **多主题支持** - [TODO-可能不做] 可自定义界面主题
 - 🖱️ **鼠标支持** - 完全鼠标交互
-  - 当前推荐使用鼠标以获得更好体验
-  - 键盘快捷键仍在开发中
+  - 当前推荐使用鼠标获得更好体验
+  - 键盘快捷键开发中
 
 ## 📋 项目状态
 
@@ -31,6 +31,10 @@
 - [x] API 客户端开发
 - [x] UI 框架搭建
 - [x] 核心功能实现
+- [x] 代理管理
+- [x] 流量监控
+- [x] 日志查看
+- [ ] 多语言支持
 - [ ] 查看配置详情
 - [ ] 查看规则
 - [ ] 切换配置文件
@@ -40,12 +44,12 @@
 
 - **语言**：Go 1.24.1
 - **UI 框架**：[tview](https://github.com/rivo/tview)
-- **API**：HOMO API
+- **API**：Mihomo API
 
 ## 📁 项目结构
 
 ```
-homoTui/
+mihomoTui/
 ├── main.go                 # 程序入口
 ├── internal/
 │   ├── api/               # API 客户端
@@ -56,12 +60,12 @@ homoTui/
 │   │   ├── pages/         # 页面组件
 │   │   └── utils/         # 工具函数
 │   └── app.go             # 应用入口
-├── docs/                  # 文档（当前为空）
+├── docs/                  # 文档（目前为空）
 ```
 
 ## 🚀 快速开始
 
-### 环境要求
+### 前置条件
 
 - Go 1.24.1 或更高版本
 - 支持 256 色和鼠标的终端
@@ -84,9 +88,9 @@ go run main.go
 2. 使用鼠标或键盘快捷键进行导航
 3. 切换到 `配置` 标签页
 4. 配置你的设置
-  - 配置数据将保存到 `~/.config/homoTui/config.yaml`
-5. 配置完成后，建议保存并重启应用以避免问题
-6. 尽情享受 HomoTui！
+  - 配置数据将保存到 `~/.config/mihomoTui/config.yaml`
+5. 配置完成后，保存并重启应用以避免问题
+6. 尽情享受 mihomoTui！
 
 ## 🤝 参与贡献
 
@@ -104,7 +108,7 @@ go run main.go
 
 本项目采用 MIT 许可证，详情请参阅 [LICENSE](LICENSE) 文件。
 
-## 🙏 致谢
+## 🙏 鸣谢
 
 - [tview](https://github.com/rivo/tview) - 强大的终端 UI 库
 
@@ -112,4 +116,5 @@ go run main.go
 
 如有任何问题或建议，请通过以下方式联系我们：
 
-- 问题 [Issue](https://github.com/FlySky-z/homoTui/issues)
+- 提交 [Issue](https://github.com/FlySky-z/mihomoTui/issues)
+- 发起 [Discussion](https://github.com/FlySky-z/mihomoTui/discussions)

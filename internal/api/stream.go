@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"homoTui/internal/models"
+	"mihomoTui/internal/models"
 	"net/http"
 	"strings"
 )

@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  APP_NAME: "HomoTui"
+  APP_NAME: "mihomoTui"
 
 jobs:
   build:

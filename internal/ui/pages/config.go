@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"homoTui/internal/api"
-	"homoTui/internal/config"
-	"homoTui/internal/ui"
+	"mihomoTui/internal/api"
+	"mihomoTui/internal/config"
+	"mihomoTui/internal/ui"
 
 	"github.com/rivo/tview"
 )

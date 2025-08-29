@@ -62,7 +62,7 @@ type Manager struct {
 // NewManager creates a new configuration manager
 func NewManager() *Manager {
 	homeDir, _ := os.UserHomeDir()
-	configDir := filepath.Join(homeDir, ".config", "homoTui")
+	configDir := filepath.Join(homeDir, ".config", "mihomoTui")
 	configPath := filepath.Join(configDir, "config.json")
 
 	return &Manager{
@@ -265,7 +265,7 @@ func (m *Manager) SetEndpoint(baseURL, secret string) error {
 // GetDataDir returns a default data directory
 func (m *Manager) GetDataDir() string {
 	homeDir, _ := os.UserHomeDir()
-	return filepath.Join(homeDir, ".config", "homoTui")
+	return filepath.Join(homeDir, ".config", "mihomoTui")
 }
 
 // EnsureDataDir ensures the data directory exists

@@ -1,15 +1,15 @@
 package main
 
 import (
-	app "homoTui/internal"
-	"homoTui/internal/utils"
 	"log"
+	app "mihomoTui/internal"
+	"mihomoTui/internal/utils"
 )
 
 func main() {
 	// Create new application with build info
 	app := app.NewApp(
-		utils.GetEnvWithDefault("APP_NAME", "HomoTui"),
+		utils.GetEnvWithDefault("APP_NAME", "mihomoTui"),
 		utils.GetEnvWithDefault("APP_VERSION", "v0.0-Alpha"),
 	)
 
